@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Mail Id</th>
+            <th *ngIf='showAction'>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let c of contacts'>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td *ngIf='showAction'>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
